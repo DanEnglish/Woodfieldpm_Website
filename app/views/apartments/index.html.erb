@@ -17,7 +17,7 @@
       <tr>
         <td><%= apartment.apt_number %></td>
         <td><%= apartment.for_rent %></td>
-        <td><%= apartment.building_id %></td>
+        <td><%= Building.find(apartment.building_id).name %></td>
         <td><%= link_to 'Show', apartment %></td>
         <td><%= link_to 'Edit', edit_apartment_path(apartment) %></td>
         <td><%= link_to 'Destroy', apartment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

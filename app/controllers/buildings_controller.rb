@@ -25,7 +25,6 @@ class BuildingsController < ApplicationController
   # POST /buildings.json
   def create
     @building = Building.new(building_params)
-
     respond_to do |format|
       if @building.save
         format.html { redirect_to @building, notice: 'Building was successfully created.' }

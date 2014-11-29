@@ -20,8 +20,8 @@
     <%= f.check_box :for_rent %>
   </div>
   <div class="field">
-    <%= f.label :building_id %><br>
-    <%= f.number_field :building_id %>
+    <%= f.label :building %><br>
+    <%= f.collection_select :building_id, Building.all, :id, :name, { include_blank: "" } %>
   </div>
   <div class="actions">
     <%= f.submit %>

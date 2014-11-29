@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: woodfieldPM_production
-  username: woodfieldPM
+  username: woodfieldpm
   password: <%= ENV['WOODFIELDPM_DATABASE_PASSWORD'] %>
